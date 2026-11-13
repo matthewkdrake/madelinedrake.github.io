@@ -1,0 +1,29 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+</style>
+
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h1 {
+    font-family: lora;
+    color: black;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+    font-family: lora;
+    color: red;
+}
+
+img {
+    max-width: 20%;
+    height: auto;
+}

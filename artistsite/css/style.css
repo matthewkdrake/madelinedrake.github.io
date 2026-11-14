@@ -1,6 +1,26 @@
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-</style>
+
+:root {
+  //define default colours for the site
+  --base-color: #000000;
+  --text-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: lora, sans-serif; 
+  color: var(--text-color);
+}
+
+body {
+  padding: 1em;
+  background-color: var(--base-color);
+}
 
 .lora-<uniquifier> {
   font-family: "Lora", serif;
@@ -9,21 +29,88 @@
   font-style: normal;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: lora;
     color: black;
 }
 
-.center {
-  text-align: center;
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
 }
 
-a {
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child {
+    margin-right: auto;
     font-family: lora;
-    color: red;
+    font-weight: bold;
 }
 
-img {
-    max-width: 20%;
-    height: auto;
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: lora;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header, section {
+    margin: 2em auto ;
+    width: min(75em, 100%);
+    background-color: var(--base-color);
+    padding: min(2em,15%);
+    border-radius: 1em;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object position: bottom;
+}
+
+.text-container{
+    flex: 0 1 34em;
+    max-width: 40em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.text-container p {
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem;
+}
+
+.cta-button{
+    display: inline-block;
+    padding: .5em 1em;
+    background-color: var(--base-color);
+    color: var(--base-color);
+    text-decoration: none;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.secondary {
+    background-color: var(--base-color);
 }

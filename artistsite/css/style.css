@@ -2,8 +2,11 @@
 
 :root {
   //define default colours for the site
-  --base-color: #000000;
+  --base-color: #E3C8B8;
   --text-color: #000000;
+  --primary-color: #733232;
+  --color-2: #F3F7F9;
+
 }
 
 * {
@@ -19,7 +22,7 @@ html {
 
 body {
   padding: 1em;
-  background-color: var(--base-color);
+  background-color:#E3C8B8;
 }
 
 .lora-<uniquifier> {
@@ -32,6 +35,7 @@ body {
 h1, h2, h3 {
     font-family: lora;
     color: black;
+    font-size:x-large
 }
 
 
@@ -93,7 +97,11 @@ header img {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 .text-container p {
@@ -102,15 +110,33 @@ h1 {
 }
 
 .cta-button{
+
+    nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: lora;
+
+    nav a:hover{
     display: inline-block;
-    padding: .5em 1em;
-    background-color: var(--base-color);
-    color: var(--base-color);
+    padding: .75em 1.25em;
+    color: var(--text-color);
     text-decoration: none;
     border-radius: .5em;
-    font-weight: 600;
+    font-weight: 600;    
+    }
 }
 
 .secondary {
     background-color: var(--base-color);
+}
+
+section{
+    padding: 3em min(2em,15%);
+    background color: var(--color-2);
+    text-align: center;
+}
+
+section p {
+    margin-top: 1em;
+    font-size: 1.25rem;
 }
